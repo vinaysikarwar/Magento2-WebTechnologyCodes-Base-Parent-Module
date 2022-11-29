@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author WebTechnologyCodes Team
+ * @copyright Copyright (c) 2017 WebTechnologyCodes (https://www.WebTechnologyCodes.com)
+ * @package WebTechnologyCodes_Base
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="WebTechnologyCodes" translate="label" sortOrder="999999" class="WebTechnologyCodes-tab">
+            <label>Web Technology Codes</label>
+        </tab>
+        <section id="WebTechnologyCodes_base" translate="label" type="text" sortOrder="110" showInDefault="1" showInWebsite="1"
+                 showInStore="1">
+            <label><![CDATA[Extensions &amp; Notifications]]></label>
+            <tab>WebTechnologyCodes</tab>
+            <resource>WebTechnologyCodes_Base::config</resource>
+            <group id="extensions" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="0"
+                   showInStore="0">
+                <label>Installed Extensions</label>
+                <frontend_model>WebTechnologyCodes\Base\Block\Extensions</frontend_model>
+            </group>
+            <group id="information" translate="label" type="text" sortOrder="15" showInDefault="1" showInWebsite="0"
+                   showInStore="0">
+                <label>System Information</label>
+                <frontend_model>WebTechnologyCodes\Base\Block\Info</frontend_model>
+            </group>
+        </section>
+    </system>
+</config>
